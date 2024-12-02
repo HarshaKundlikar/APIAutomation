@@ -5,8 +5,8 @@ import io.restassured.RestAssured;
 public class APITest002 {
     public static void main(String[] args) {
         //Full URL: https://restful-booker.herokuapp.com/booking/1
-        RestAssured.
-                given()
+        RestAssured
+                .given()
                 .baseUri("https://restful-booker.herokuapp.com")
                 .basePath("booking/1")
                 .when()
